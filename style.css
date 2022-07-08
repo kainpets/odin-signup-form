@@ -1,13 +1,22 @@
 .content {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
 
 .left-side {
-  background-image: url(./img/halie-west-25xggax4bSA-unsplash.jpg);
-  padding: 20em;
-  background-repeat: no-repeat;
-  outline: 2px solid black;
-  background-size: 30% 100%;
+  height: 100vh;
   max-width: 30%;
-  
+  outline: 2px solid black;
+}
+
+img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.right-side {
+  height: 100vh;
 }
