@@ -4,20 +4,15 @@
   justify-content: center;
   height: 100vh;
   overflow: hidden;
+  max-width: 90vw;
+  box-shadow: 0 0 15px 2px #DDD;
 }
 
 .left-side {
-  overflow: hidden;
-  height: 100vh;
-  max-width: 30%;
-  outline: 2px solid black;
-}
-
-img {
-  object-fit: cover;
-  width: 100%;
+  background-image: url(https://images.unsplash.com/photo-1585202900225-6d3ac20a6962?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80);
+  background-repeat: no-repeat;
   height: 100%;
-  overflow: hidden;
+  width: 35%;
 }
 
 .right-side {
@@ -30,4 +25,16 @@ img {
 
 .right-side > * {
   padding: 50px;
+}
+
+
+form {
+  background-color: #FFF;
+  padding: 2rem 2rem;
+  box-shadow: 0px 3px 5px -2px rgba(0, 0, 0, .5);
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-bottom: 3rem;
 }
