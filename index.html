@@ -1,51 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Signup Form</title>
-    <!-- Google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <section class="images">
-      <div class="logo">
-        <img src="/img/odin-lined.png" alt="the odin project logo" />
-        <h2 class="uppercase">odin</h2>
-      </div>
-        <p class="attribution">Photo by <a href="">Hallie West</a> on <a href="">Unsplash</a></p>
-    </section>
-    <section class="sign-up">
-      <h1>Service</h1>
-      <h2>
-        This is not a real online service! You know you need something like this
-        in your life to help you realize your deepest dreams. Sign up now to get
-        started.
-      </h2>
-      <h2>You know you want to.</h2>
-      <form class="uppercase" action="">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Signup Form</title>
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+  href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow:wght@400;700&display=swap"
+  rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <section class="images">
+    <div class="logo">
+      <img src="/img/odin-lined.png" alt="the odin project logo" />
+      <h2 class="uppercase">odin</h2>
+    </div>
+    <p class="attribution">Photo by <a href="">Hallie West</a> on <a href="">Unsplash</a></p>
+  </section>
+  <section class="sign-up">
+    <h2>
+      This is not a real online service! You know you need something like this
+      in your life to help you realize your deepest dreams.<br> Sign up <span class="italic">now</span> to get
+      started.
+    </h2>
+    <h2>You <span class="italic">know</span> you want to.</h2>
+    <h2>Let's do this!</h2>
+    <form class="form" action="">
+      <div class="left-form uppercase">
         <label for="first-name">FIRST NAME</label>
         <input type="text" id="first-name" name="first-name" />
-        <label for="last-name">LAST name</label>
-        <input type="text" id="last-name" name="last-name" />
         <label for="e-mail">EMAIL</label>
         <input type="email" id="e-mail" name="e-mail" />
-        <label for="phone-number">PHONE NUMBER</label>
-        <input type="tel" id="phone-number" name="phone-number" />
         <label for="password">PASSWORD</label>
         <input type="password" id="password" name="password" />
+      </div>
+      <div class="right-form uppercase">
+        <label for="last-name">LAST name</label>
+        <input type="text" id="last-name" name="last-name" />
+        <label for="phone-number">PHONE NUMBER</label>
+        <input type="tel" id="phone-number" name="phone-number" />
         <label for="confirm-password">CONFIRM PASSWORD</label>
         <input type="password" id="confirm-password" name="confirm-password" />
-      </form>
-      <button>Create Accout</button>
-      <p>Already have an account? <a href="">Log in</a></p>
-    </section>
-  </body>
+      </div class="right-form">
+    </form>
+    <button class="btn">Create Accout</button>
+    <p class="log-in">Already have an account? <a href="">Log in</a></p>
+  </section>
+</body>
 </html>

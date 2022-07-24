@@ -12,6 +12,7 @@
   --clr-dark: 230 35% 7%;
   --clr-light: 231 77% 90%;
   --clr-white: 0 0% 100%;
+  --clr-darkgreen: 103, 58%, 14%;
   
   /* font sizes */
   --fs-900: clamp(3rem, 5vw + 1rem, 6.375rem);
@@ -32,6 +33,7 @@
 /* --------------------------- */
 
 .uppercase {text-transform: uppercase;}
+.italic {font-style: italic;}
 
 /* --------------------------- */
 /* Reset                       */
@@ -52,9 +54,6 @@ body, h1, h2, h3, h4, h5, p, figure, picture {
   margin: 0;
 }
 
-h1, h2, h3, h4, h5, h6, p {
-  font-weight: 400;
-}
 
 /* set up the body */
 body {
@@ -93,6 +92,7 @@ input, button, textarea, select {
 /* --------------------------- */
 
 body {
+  background-color: rgba(238, 238, 238, 0.45);
   display: flex;
   overflow: hidden;
 }
@@ -101,7 +101,6 @@ body {
   background-color: darkgreen;
   background-image: url(/img/halie-west-25xggax4bSA-unsplash.jpg);
   background-size: cover;
-  outline: 1px solid red;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -135,3 +134,53 @@ body {
   color: hsl(var(--clr-white));
 }
 
+.sign-up {
+  margin-left: 5rem;
+  margin-top: 10vh;
+  margin-right: 5rem;
+}
+
+.sign-up > h2 {
+  font-weight: bold;
+}
+
+.sign-up > *:not(button) {
+  padding-top: 2rem;
+}
+
+.form {
+  margin: 0 -5rem;
+  padding: 2rem 5rem;
+  box-shadow: 0px 0px 24px -11px rgba(66, 68, 90, 1);
+  display: flex;
+}
+
+.form > h2 {
+  font-weight: bold;
+}
+
+.btn {
+  margin-top: 2rem;
+  padding: 0.75rem 4rem;
+  background-color: hsl(var(--clr-darkgreen));
+  color: hsl(var(--clr-white));
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: box-shadow 200ms ease-in-out;
+}
+
+.btn:hover {
+  box-shadow: 11px 11px 19px 0px rgba(66, 68, 90, 1);
+}
+
+.log-in {
+  font-size: 1.5rem;;
+}
+
+.log-in > a {
+  color: hsl(var(--clr-darkgreen));
+  font-weight: bold;
+  text-decoration: none;
+}
