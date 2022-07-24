@@ -14,14 +14,14 @@
   --clr-white: 0 0% 100%;
   
   /* font sizes */
-  --fs-900: clamp(5rem, 8vw + 1rem, 9.375rem);
+  --fs-900: clamp(3rem, 5vw + 1rem, 6.375rem);
   --fs-800: 3.5rem;
   --fs-700: 1.5rem;
   --fs-600: 1rem;
   --fs-500: 1.75rem;
   --fs-400: 0.9375rem;
   --fs-300: 1rem;
-  --fs-200: 0.875rem;
+  --fs-200: 0.8rem;
   
 }
 
@@ -100,17 +100,36 @@ body {
   background-image: url(/img/halie-west-25xggax4bSA-unsplash.jpg);
   background-size: cover;
   outline: 1px solid red;
-  padding: 0 10%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
   color: hsl(var(--clr-white));
 }
 
 .logo {
-  outline: 1px solid blue;
-  width: 200px;
-  background: rgba(0, 0, 0, 20%);
+  display: flex;
+  width: 100%;
+  background: rgba(0, 0, 0, 30%);
+  justify-content: center;
+  align-items: center;
+  font-family: var(--ff-serif);
+  font-size: var(--fs-900);
+  margin-top: 15vh;
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+
+.logo > img {
+  height: 100px;
+}
+
+.attribution {
+  padding-left: 10vw;
+  color: hsl(var(--clr-white));
+  font-size: var(--fs-200);
+}
+
+.attribution > a {
+  color: hsl(var(--clr-white));
 }
 
