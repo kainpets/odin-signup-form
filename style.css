@@ -23,6 +23,8 @@
   --fs-300: 1rem;
   --fs-200: 0.8rem;
   
+  /* padding */
+  --img-padding: 10vw;
 }
 
 /* --------------------------- */
@@ -115,8 +117,8 @@ body {
   font-family: var(--ff-serif);
   font-size: var(--fs-900);
   margin-top: 15vh;
-  padding-left: 10vw;
-  padding-right: 10vw;
+  padding-left: var(--img-padding);
+  padding-right: var(--img-padding);
 }
 
 .logo > img {
@@ -124,7 +126,7 @@ body {
 }
 
 .attribution {
-  padding-left: 10vw;
+  padding-left: var(--img-padding);
   color: hsl(var(--clr-white));
   font-size: var(--fs-200);
 }
