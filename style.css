@@ -1,0 +1,116 @@
+/* --------------------------- */
+/* Custom properties           */
+/* --------------------------- */
+
+:root {
+  /* font families */
+  --ff-serif: "Bellefair", serif;
+  --ff-sans-cond: "Barlow Condensed", sans-seriff;
+  --ff-sans-normal: "Barlow", sans-serif;
+  
+  /* colors */
+  --clr-dark: 230 35% 7%;
+  --clr-light: 231 77% 90%;
+  --clr-white: 0 0% 100%;
+  
+  /* font sizes */
+  --fs-900: clamp(5rem, 8vw + 1rem, 9.375rem);
+  --fs-800: 3.5rem;
+  --fs-700: 1.5rem;
+  --fs-600: 1rem;
+  --fs-500: 1.75rem;
+  --fs-400: 0.9375rem;
+  --fs-300: 1rem;
+  --fs-200: 0.875rem;
+  
+}
+
+/* --------------------------- */
+/* Utility classes             */
+/* --------------------------- */
+
+.uppercase {text-transform: uppercase;}
+
+/* --------------------------- */
+/* Reset                       */
+/* --------------------------- */
+
+/* https://piccalil.li/blog/a-modern-css-reset/ */
+
+/* Box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Reset margins */
+
+body, h1, h2, h3, h4, h5, p, figure, picture {
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  font-weight: 400;
+}
+
+/* set up the body */
+body {
+  font-family: var(--ff-sans-normal);
+  font-size: var(--fs-300);
+  line-height: 1.5;
+  min-height: 100vh; 
+}
+
+/* make images to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* forms reset */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* remove animations for people who've turned them off */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* --------------------------- */
+/* Components             */
+/* --------------------------- */
+
+body {
+  display: flex;
+  overflow: hidden;
+}
+
+.images{
+  background-color: darkgreen;
+  background-image: url(/img/halie-west-25xggax4bSA-unsplash.jpg);
+  background-size: cover;
+  outline: 1px solid red;
+  padding: 0 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color: hsl(var(--clr-white));
+}
+
+.logo {
+  outline: 1px solid blue;
+  width: 200px;
+  background: rgba(0, 0, 0, 20%);
+}
+
