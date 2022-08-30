@@ -1,5 +1,4 @@
-This is a The Odin Project excerise available at:
-https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-sign-up-form
+This is a part of The Odin Project  made with HTML, CSS and JS.
 
 This solution is published at:
 https://kainpets.github.io/odin-signup-form/
